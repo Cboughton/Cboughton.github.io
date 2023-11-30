@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Christian Boughton">
+    <title>Display Map</title>
+    <link rel="stylesheet" href="cssRepo/index.css">
+</head>
+<!-- Top banner for navigation and account actions -->
+<div topnav class="banner">
+    <div class="child"><a href="index.html"><button class="button" style="font-size: 18px;">Home</button></a></div>
+    <div class="child"><a href="CapturePortal.html"><button class="button"><img class="img" id="img" src="images/Logos.png/userIcon.png"></button></a></div>
+</div>
+
+<!-- Map display -->
+<div id="map" style="width:100%;height:85vh; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"></div>
+<div class="pageBreak"></div>
+
+<!-- Legend -->
+<legend class="rectangle">
+    <img src="images\Logos.png\legendArrow.png" width="200" class=" innerLegend">
+</legend>
+
+</body>
+<script src="jsRepo/ViewSaved.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMK5RYlweojRJosutkPhwN0Q30vYIRKXc&libraries=visualization&callback=myMap"></script>
+</html>

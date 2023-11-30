@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Christian Boughton">
+    <title>Help Page</title>
+    <link rel="stylesheet" href="cssRepo/help.css">
+</head>
+
+<body>
+
+<!-- Top banner for navigation and account actions -->
+<div topnav class="banner">
+    <div class="child"><a href="Creators2.html"><button class="button" style="font-size: 18px;">About</button></a></div>
+    <div class="child"><button class="button" id="userIcon"><img class="img" src="images/Logos.png/userIcon.png" id="img"></button></div>
+</div>
+
+<!-- Container holding the contact form -->
+<div style="max-height: 85vh;" class="container">
+    <div id="left">
+        <img id="img" style="max-width: 50vw; max-height: 30rem; object-fit: contain; padding-top: 4vh;" src="images/Logos.png/logo-white.png">
+        <div id="description" style="display: inline-flexbox; flex-direction: column; max-width: 12rem; text-align: center;"><br>Here at HomeFinderISU we are commited to ensuring the best expirence possible. If you have any coners or just want to give us a shout please use the form to the right, or email us at homefinderisu@gmail.com</div>
+    </div>
+    <form name="contactForm" id="contactForm" action='http://13.59.183.231:8080/contact' style="width: 30vw;">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="name@provider.com">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="What can we do for you.." style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
+<script src="jsRepo/help.js"></script>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ella Knott">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="cssRepo/about.css">
+
+    <style>
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+
+        .container {
+            width: 100%;
+            /*whatever size you want your container*/
+            display: flex;
+            /*Make sure to call this on your container*/
+            align-items: stretch;
+            /*stretches all cards same height*/
+            justify-content: space-around;
+            /*some space between cards*/
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Navigation Bar-->
+    <header data-bs-theme="dark">
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <strong>Creators</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="index.html"><button class="button" style="float: right;margin-right: 2.5%; height: 10vh;">back</button></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- A container for images and descriptions of each team member -->
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-4">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" src="images/boughton.jpg" alt="Christian">
+                    <div class="card-body">
+                        <p class="card-text">I am a senior in the Cyber Security
+                            Engineering program. I joined this program to hone the skills I learned as a network
+                            cryptologist in the
+                            USN. I currently reside in Des Moines, and when I'm not busy with school, you can find me
+                            out in nature
+                            with my wife and daughter</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" src="images/DanielChrismanHeadshot.jpg" alt="Daniel">
+                    <div class="card-body">
+                        <p class="card-text">I am a senior in Computer Engineering and
+                            outside of school I play baseball on the Iowa State Club team. In my future I aspire to find
+                            a position
+                            that challenges me daily and to allow me to better suit our future with constant
+                            technological upgrades</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" src="images/Ella_Knott.jpg" alt="Ella">
+                    <div class="card-body">
+                        <p class="card-text">I am a senior in Cybersecurity Engineering. I
+                            joined this program after being inspired by a high school extracurricular that taught kids
+                            cybersecurity. I am hoping to have a career in digital forensics or vulnerability management
+                            one day. In
+                            my free time you can find me gardening and taking care of my pet turkey.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" src="images/Lith.jpg" alt="Lith">
+                    <div class="card-body">
+                        <p class="card-text">I am a senior software engineer who has a
+                            passion for exploring the world and watching soccer. </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" src="images/Micheal.jpg" alt="Michael">
+                    <div class="card-body">
+                        <p class="card-text">I am a senior in software engineering. In my
+                            free time I enjoy playing soccer and volleyball. In the future I hope to have a position
+                            working on app
+                            development.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

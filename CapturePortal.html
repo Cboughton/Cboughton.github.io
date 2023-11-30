@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Christian Boughton">
+    <title>Capture Portal</title>
+    <link rel="stylesheet" href="cssRepo/CapturePortal.css">
+</head>
+
+<body>
+    <div class="box">
+        <!-- Insert logo-->
+        <img src="images/Logos.png/logo-color.png" style="border-radius: 50%;">
+
+        <!-- Defines login and signup as seperate pages-->
+        <div class="page">
+            <div class="header">
+                <a id="login" class="active" href="#login">login</a>
+                <a id="signup" href="#signup">signup</a>
+            </div>
+
+            <!-- Validation messege for input requierments-->
+            <div id="errorMsg"></div>
+            <div class="content">
+
+
+                <!-- Login page
+                     This uses a POST request to send the information gathered in the form
+                     to the back end server. It has not been configured to send JSON data and
+                     instead uses the defualt. The request is only submitted if the requierments outlined
+                     in the ValidateLoginForm function are met. Displays an error messege to alert users of the problem
+                -->
+                    <form class="login" name="loginForm" id="loginForm" action='http://13.59.183.231:8080/login'>
+                    <input type="text" name="name" id="logName" placeholder="Username" autocomplete="given-name">
+                    <input type="password" name="password" id="logPassword" placeholder="Password" autocomplete="current-password">
+
+                    <!--  Checkbox to signal that the user would like to save their login information to their keychain-->
+                    <div id="check">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <br><br>
+                    
+                    <input type="submit" value="Login">
+
+                    <!--  Link to forgot password page-->
+                    <a href="RecoverPortal.html">Forgot Password?</a>
+                </form>
+
+                <!-- Signup page
+                     This uses a POST request to send the information gathered in the form
+                     to the back end server. It has not been configured to send JSON data and
+                     instead uses the defualt. The request is only submitted if the requierments outlined
+                     in the ValidateLoginForm function are met. Displays an error messege to alert users of the problem
+                     email validation is handeled by setting the type.
+                -->
+                <form class="signup" name="signupForm" id="signupForm" action='http://13.59.183.231:8080/signup'>
+                    <input type="email" name="email" id="signEmail" placeholder="Email" autocomplete="off">
+                    <input type="text" name="name" id="signName" placeholder="Username" autocomplete="given-name">
+                    <input type="password" name="password" id="signPassword" placeholder="Password" autocomplete="new-password"><br>
+                    <input type="submit" value="SignUp">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="jsRepo/CapturePortal.js"></script>
+</body>

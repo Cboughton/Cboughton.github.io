@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Christian Boughton">
+    <title>Front Page</title>
+    <link rel="stylesheet" href="cssRepo/index.css">
+</head>
+
+<!-- Top banner for navigation and account actions -->
+<div topnav class="banner">
+    <div class="child"><a href="Creators2.html"><button class="button" style="font-size: 18px;">About</button></a></div>
+    <div class="child"><a href="HelpPage.html"><button class="button" style="font-size: 18px;">Contact</button></a></div>
+    <div class="child"><button class="button" id="userIcon"><img class="img" src="images/Logos.png/userIcon.png" id="img"></button></div>
+</div>
+
+<div body style="background-image: url('images/background.jpg'); background-size: cover; height: 60vh; background-position: center;     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <p class="title">Home Finder<span style="color: grey;">ISU</span></p>
+
+    <!-- Center input bar -->
+    <li class="li">
+        <input id="locations" class="inputBar" type="text" placeholder="  Enter an address">
+        <input id="frequencies" class="inputBar" type="text" placeholder="Frequencies">
+        <button id="add-elements" class="inputButton">+</button>
+        <button id="show-elements-dropdown" class="inputButton"style="border-radius: 0rem .5rem .5rem 0rem;">></button>
+        <button id="submit" class="inputButton" style="background-color: transparent; min-width: 2rem; color: aliceblue;" >Go</button>
+    </li>
+
+    <!-- Drop down that entered locations can be seen-->
+    <div id="dropdown" class="dropdown-content"></div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMK5RYlweojRJosutkPhwN0Q30vYIRKXc&libraries=places"></script>
+<script src="jsRepo/index.js"></script>
+</html>
